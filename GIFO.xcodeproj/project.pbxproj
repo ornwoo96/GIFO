@@ -11,6 +11,13 @@
 		0BE7767F29B5F500004FFB75 /* GIFO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE7767429B5F4FF004FFB75 /* GIFO.framework */; };
 		0BE7768429B5F500004FFB75 /* GIFOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7768329B5F500004FFB75 /* GIFOTests.swift */; };
 		0BE7768529B5F500004FFB75 /* GIFO.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BE7767729B5F4FF004FFB75 /* GIFO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BE7769129B5F655004FFB75 /* GIFOFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7769029B5F655004FFB75 /* GIFOFrame.swift */; };
+		0BE7769329B5F680004FFB75 /* GIFOImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7769229B5F680004FFB75 /* GIFOImageCache.swift */; };
+		0BE7769529B5F68D004FFB75 /* GIFOImageCacheItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7769429B5F68D004FFB75 /* GIFOImageCacheItem.swift */; };
+		0BE7769729B5F696004FFB75 /* GIFOFrameFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7769629B5F696004FFB75 /* GIFOFrameFactory.swift */; };
+		0BE7769929B5F6A0004FFB75 /* GIFOAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7769829B5F6A0004FFB75 /* GIFOAnimator.swift */; };
+		0BE7769B29B5F6A7004FFB75 /* GIFOIMageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7769A29B5F6A7004FFB75 /* GIFOIMageView.swift */; };
+		0BE7769D29B5F6B1004FFB75 /* GIFODownLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7769C29B5F6B1004FFB75 /* GIFODownLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		0BE7767829B5F4FF004FFB75 /* GIFO.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = GIFO.docc; sourceTree = "<group>"; };
 		0BE7767E29B5F500004FFB75 /* GIFOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GIFOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE7768329B5F500004FFB75 /* GIFOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFOTests.swift; sourceTree = "<group>"; };
+		0BE7769029B5F655004FFB75 /* GIFOFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFOFrame.swift; sourceTree = "<group>"; };
+		0BE7769229B5F680004FFB75 /* GIFOImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFOImageCache.swift; sourceTree = "<group>"; };
+		0BE7769429B5F68D004FFB75 /* GIFOImageCacheItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFOImageCacheItem.swift; sourceTree = "<group>"; };
+		0BE7769629B5F696004FFB75 /* GIFOFrameFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFOFrameFactory.swift; sourceTree = "<group>"; };
+		0BE7769829B5F6A0004FFB75 /* GIFOAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFOAnimator.swift; sourceTree = "<group>"; };
+		0BE7769A29B5F6A7004FFB75 /* GIFOIMageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFOIMageView.swift; sourceTree = "<group>"; };
+		0BE7769C29B5F6B1004FFB75 /* GIFODownLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFODownLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +85,8 @@
 		0BE7767629B5F4FF004FFB75 /* GIFO */ = {
 			isa = PBXGroup;
 			children = (
-				0BE7767729B5F4FF004FFB75 /* GIFO.h */,
-				0BE7767829B5F4FF004FFB75 /* GIFO.docc */,
+				0BE7768E29B5F5FF004FFB75 /* Resource */,
+				0BE7768F29B5F606004FFB75 /* Source */,
 			);
 			path = GIFO;
 			sourceTree = "<group>";
@@ -83,6 +97,29 @@
 				0BE7768329B5F500004FFB75 /* GIFOTests.swift */,
 			);
 			path = GIFOTests;
+			sourceTree = "<group>";
+		};
+		0BE7768E29B5F5FF004FFB75 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0BE7767729B5F4FF004FFB75 /* GIFO.h */,
+				0BE7767829B5F4FF004FFB75 /* GIFO.docc */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		0BE7768F29B5F606004FFB75 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0BE7769029B5F655004FFB75 /* GIFOFrame.swift */,
+				0BE7769229B5F680004FFB75 /* GIFOImageCache.swift */,
+				0BE7769429B5F68D004FFB75 /* GIFOImageCacheItem.swift */,
+				0BE7769629B5F696004FFB75 /* GIFOFrameFactory.swift */,
+				0BE7769829B5F6A0004FFB75 /* GIFOAnimator.swift */,
+				0BE7769A29B5F6A7004FFB75 /* GIFOIMageView.swift */,
+				0BE7769C29B5F6B1004FFB75 /* GIFODownLoader.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +231,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BE7769729B5F696004FFB75 /* GIFOFrameFactory.swift in Sources */,
+				0BE7769329B5F680004FFB75 /* GIFOImageCache.swift in Sources */,
+				0BE7769129B5F655004FFB75 /* GIFOFrame.swift in Sources */,
+				0BE7769D29B5F6B1004FFB75 /* GIFODownLoader.swift in Sources */,
+				0BE7769B29B5F6A7004FFB75 /* GIFOIMageView.swift in Sources */,
+				0BE7769929B5F6A0004FFB75 /* GIFOAnimator.swift in Sources */,
+				0BE7769529B5F68D004FFB75 /* GIFOImageCacheItem.swift in Sources */,
 				0BE7767929B5F4FF004FFB75 /* GIFO.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +319,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -350,6 +395,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,9 +405,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Dynamic.GIFO;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -378,6 +428,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,15 +438,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Dynamic.GIFO;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		0BE7768C29B5F500004FFB75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DAG6F8V8UR;
@@ -412,6 +468,7 @@
 		0BE7768D29B5F500004FFB75 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DAG6F8V8UR;
