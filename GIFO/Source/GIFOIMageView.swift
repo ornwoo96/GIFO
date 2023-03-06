@@ -10,8 +10,6 @@ import UIKit
 public class GIFOImageView: UIImageView {
     private var animator = GIFOAnimator()
     
-    
-    
     // Setup - GIF URL
     public func setupGIFImage(url: String,
                               cacheKey: String,
