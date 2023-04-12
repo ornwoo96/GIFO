@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B1757F829E7276000DB6A82 /* GIFOImageView+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1757F729E7276000DB6A82 /* GIFOImageView+UIImage.swift */; };
+		0B1757FA29E7279200DB6A82 /* GIFOErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1757F929E7279200DB6A82 /* GIFOErrors.swift */; };
 		0BE7767929B5F4FF004FFB75 /* GIFO.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7767829B5F4FF004FFB75 /* GIFO.docc */; };
 		0BE7767F29B5F500004FFB75 /* GIFO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE7767429B5F4FF004FFB75 /* GIFO.framework */; };
 		0BE7768429B5F500004FFB75 /* GIFOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7768329B5F500004FFB75 /* GIFOTests.swift */; };
 		0BE7768529B5F500004FFB75 /* GIFO.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BE7767729B5F4FF004FFB75 /* GIFO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0BE7769129B5F655004FFB75 /* GIFOFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7769029B5F655004FFB75 /* GIFOFrame.swift */; };
-		0BE7769329B5F680004FFB75 /* GIFOImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7769229B5F680004FFB75 /* GIFOImageCache.swift */; };
+		0BE7769329B5F680004FFB75 /* GIFOImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7769229B5F680004FFB75 /* GIFOImageCacheManager.swift */; };
 		0BE7769529B5F68D004FFB75 /* GIFOImageCacheItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7769429B5F68D004FFB75 /* GIFOImageCacheItem.swift */; };
 		0BE7769729B5F696004FFB75 /* GIFOFrameFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7769629B5F696004FFB75 /* GIFOFrameFactory.swift */; };
 		0BE7769929B5F6A0004FFB75 /* GIFOAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7769829B5F6A0004FFB75 /* GIFOAnimator.swift */; };
-		0BE7769B29B5F6A7004FFB75 /* GIFOIMageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7769A29B5F6A7004FFB75 /* GIFOIMageView.swift */; };
+		0BE7769B29B5F6A7004FFB75 /* GIFOImageView+CADisplayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7769A29B5F6A7004FFB75 /* GIFOImageView+CADisplayLink.swift */; };
 		0BE7769D29B5F6B1004FFB75 /* GIFODownLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7769C29B5F6B1004FFB75 /* GIFODownLoader.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,17 +33,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B1757F729E7276000DB6A82 /* GIFOImageView+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GIFOImageView+UIImage.swift"; sourceTree = "<group>"; };
+		0B1757F929E7279200DB6A82 /* GIFOErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFOErrors.swift; sourceTree = "<group>"; };
 		0BE7767429B5F4FF004FFB75 /* GIFO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GIFO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE7767729B5F4FF004FFB75 /* GIFO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIFO.h; sourceTree = "<group>"; };
 		0BE7767829B5F4FF004FFB75 /* GIFO.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = GIFO.docc; sourceTree = "<group>"; };
 		0BE7767E29B5F500004FFB75 /* GIFOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GIFOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE7768329B5F500004FFB75 /* GIFOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFOTests.swift; sourceTree = "<group>"; };
 		0BE7769029B5F655004FFB75 /* GIFOFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFOFrame.swift; sourceTree = "<group>"; };
-		0BE7769229B5F680004FFB75 /* GIFOImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFOImageCache.swift; sourceTree = "<group>"; };
+		0BE7769229B5F680004FFB75 /* GIFOImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFOImageCacheManager.swift; sourceTree = "<group>"; };
 		0BE7769429B5F68D004FFB75 /* GIFOImageCacheItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFOImageCacheItem.swift; sourceTree = "<group>"; };
 		0BE7769629B5F696004FFB75 /* GIFOFrameFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFOFrameFactory.swift; sourceTree = "<group>"; };
 		0BE7769829B5F6A0004FFB75 /* GIFOAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFOAnimator.swift; sourceTree = "<group>"; };
-		0BE7769A29B5F6A7004FFB75 /* GIFOIMageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFOIMageView.swift; sourceTree = "<group>"; };
+		0BE7769A29B5F6A7004FFB75 /* GIFOImageView+CADisplayLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GIFOImageView+CADisplayLink.swift"; sourceTree = "<group>"; };
 		0BE7769C29B5F6B1004FFB75 /* GIFODownLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFODownLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +68,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B1757F129E71B0900DB6A82 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				0B1757F929E7279200DB6A82 /* GIFOErrors.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		0B1757F229E71B1000DB6A82 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0BE7769C29B5F6B1004FFB75 /* GIFODownLoader.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0B1757F329E71B1700DB6A82 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				0BE7769A29B5F6A7004FFB75 /* GIFOImageView+CADisplayLink.swift */,
+				0B1757F729E7276000DB6A82 /* GIFOImageView+UIImage.swift */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		0B1757F429E71B1C00DB6A82 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				0BE7769829B5F6A0004FFB75 /* GIFOAnimator.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		0B1757F529E71B2400DB6A82 /* FrameFactory */ = {
+			isa = PBXGroup;
+			children = (
+				0BE7769029B5F655004FFB75 /* GIFOFrame.swift */,
+				0BE7769629B5F696004FFB75 /* GIFOFrameFactory.swift */,
+			);
+			path = FrameFactory;
+			sourceTree = "<group>";
+		};
+		0B1757F629E71B2A00DB6A82 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				0BE7769429B5F68D004FFB75 /* GIFOImageCacheItem.swift */,
+				0BE7769229B5F680004FFB75 /* GIFOImageCacheManager.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 		0BE7766A29B5F4FF004FFB75 = {
 			isa = PBXGroup;
 			children = (
@@ -111,13 +166,12 @@
 		0BE7768F29B5F606004FFB75 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				0BE7769029B5F655004FFB75 /* GIFOFrame.swift */,
-				0BE7769229B5F680004FFB75 /* GIFOImageCache.swift */,
-				0BE7769429B5F68D004FFB75 /* GIFOImageCacheItem.swift */,
-				0BE7769629B5F696004FFB75 /* GIFOFrameFactory.swift */,
-				0BE7769829B5F6A0004FFB75 /* GIFOAnimator.swift */,
-				0BE7769A29B5F6A7004FFB75 /* GIFOIMageView.swift */,
-				0BE7769C29B5F6B1004FFB75 /* GIFODownLoader.swift */,
+				0B1757F129E71B0900DB6A82 /* Errors */,
+				0B1757F229E71B1000DB6A82 /* Network */,
+				0B1757F329E71B1700DB6A82 /* ImageView */,
+				0B1757F429E71B1C00DB6A82 /* Animator */,
+				0B1757F529E71B2400DB6A82 /* FrameFactory */,
+				0B1757F629E71B2A00DB6A82 /* Cache */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -180,7 +234,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					0BE7767329B5F4FF004FFB75 = {
 						CreatedOnToolsVersion = 14.2;
@@ -232,12 +286,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BE7769729B5F696004FFB75 /* GIFOFrameFactory.swift in Sources */,
-				0BE7769329B5F680004FFB75 /* GIFOImageCache.swift in Sources */,
+				0B1757FA29E7279200DB6A82 /* GIFOErrors.swift in Sources */,
+				0BE7769329B5F680004FFB75 /* GIFOImageCacheManager.swift in Sources */,
 				0BE7769129B5F655004FFB75 /* GIFOFrame.swift in Sources */,
 				0BE7769D29B5F6B1004FFB75 /* GIFODownLoader.swift in Sources */,
-				0BE7769B29B5F6A7004FFB75 /* GIFOIMageView.swift in Sources */,
+				0BE7769B29B5F6A7004FFB75 /* GIFOImageView+CADisplayLink.swift in Sources */,
 				0BE7769929B5F6A0004FFB75 /* GIFOAnimator.swift in Sources */,
 				0BE7769529B5F68D004FFB75 /* GIFOImageCacheItem.swift in Sources */,
+				0B1757F829E7276000DB6A82 /* GIFOImageView+UIImage.swift in Sources */,
 				0BE7767929B5F4FF004FFB75 /* GIFO.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -370,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -385,6 +441,7 @@
 		0BE7768929B5F500004FFB75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -392,16 +449,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Dynamic.GIFO;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -418,6 +478,7 @@
 		0BE7768A29B5F500004FFB75 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -425,16 +486,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Dynamic.GIFO;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
