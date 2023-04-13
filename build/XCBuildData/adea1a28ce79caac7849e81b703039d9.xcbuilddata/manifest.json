@@ -1,0 +1,1 @@
+{"client":{"name":"basic","version":0,"file-system":"device-agnostic"},"targets":{"":["<all>"]},"commands":{"<all>":{"tool":"phony","inputs":[],"outputs":["<all>"]}}}
