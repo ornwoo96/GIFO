@@ -73,7 +73,8 @@
 			children = (
 				0B1757F929E7279200DB6A82 /* GIFOErrors.swift */,
 			);
-			path = Errors;
+			name = Errors;
+			path = GIFO/Errors;
 			sourceTree = "<group>";
 		};
 		0B1757F229E71B1000DB6A82 /* Network */ = {
@@ -81,7 +82,8 @@
 			children = (
 				0BE7769C29B5F6B1004FFB75 /* GIFODownLoader.swift */,
 			);
-			path = Network;
+			name = Network;
+			path = GIFO/Network;
 			sourceTree = "<group>";
 		};
 		0B1757F329E71B1700DB6A82 /* ImageView */ = {
@@ -90,7 +92,8 @@
 				0BE7769A29B5F6A7004FFB75 /* GIFOImageView+CADisplayLink.swift */,
 				0B1757F729E7276000DB6A82 /* GIFOImageView+UIImage.swift */,
 			);
-			path = ImageView;
+			name = ImageView;
+			path = GIFO/ImageView;
 			sourceTree = "<group>";
 		};
 		0B1757F429E71B1C00DB6A82 /* Animator */ = {
@@ -98,7 +101,8 @@
 			children = (
 				0BE7769829B5F6A0004FFB75 /* GIFOAnimator.swift */,
 			);
-			path = Animator;
+			name = Animator;
+			path = GIFO/Animator;
 			sourceTree = "<group>";
 		};
 		0B1757F529E71B2400DB6A82 /* FrameFactory */ = {
@@ -107,7 +111,8 @@
 				0BE7769029B5F655004FFB75 /* GIFOFrame.swift */,
 				0BE7769629B5F696004FFB75 /* GIFOFrameFactory.swift */,
 			);
-			path = FrameFactory;
+			name = FrameFactory;
+			path = GIFO/FrameFactory;
 			sourceTree = "<group>";
 		};
 		0B1757F629E71B2A00DB6A82 /* Cache */ = {
@@ -116,7 +121,8 @@
 				0BE7769429B5F68D004FFB75 /* GIFOImageCacheItem.swift */,
 				0BE7769229B5F680004FFB75 /* GIFOImageCacheManager.swift */,
 			);
-			path = Cache;
+			name = Cache;
+			path = GIFO/Cache;
 			sourceTree = "<group>";
 		};
 		0BE7766A29B5F4FF004FFB75 = {
@@ -141,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				0BE7768E29B5F5FF004FFB75 /* Resource */,
-				0BE7768F29B5F606004FFB75 /* Source */,
+				0BE7768F29B5F606004FFB75 /* Sources */,
 			);
 			path = GIFO;
 			sourceTree = "<group>";
@@ -163,7 +169,7 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		0BE7768F29B5F606004FFB75 /* Source */ = {
+		0BE7768F29B5F606004FFB75 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				0B1757F129E71B0900DB6A82 /* Errors */,
@@ -173,7 +179,7 @@
 				0B1757F529E71B2400DB6A82 /* FrameFactory */,
 				0B1757F629E71B2A00DB6A82 /* Cache */,
 			);
-			path = Source;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
