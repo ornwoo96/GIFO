@@ -26,8 +26,6 @@ GIFO uses an `Animator` with CADisplayLink and a `frameFactory` to implement GIF
 
 <br/>
 
-## Usage
-
 GIFO implements GIF animation in two ways:
 
 >### UIImage.animatedImage
@@ -58,7 +56,7 @@ open class CADisplayLink : NSObject { ... }
 
 ## Example Code
 
-#### UIImage.animatedImage - Animation Setup
+>### UIImage.animatedImage - Animation Setup
 ~~~Swift
 let imageView = GIFOImageView()
 
@@ -71,16 +69,18 @@ imageView.setupGIFImageWithUIImage(url: ImageURL,
 }
 ~~~
 
+- The setupGIFImageWithUIImage function can reduce the number of frames by level and reduce data by resizing. The animation of this function cannot be stopped or started at will. The animation will automatically start as soon as the setup is complete.
+
 <br/>
 
-#### UIImage.animatedImage - clear
+>### UIImage.animatedImage - clear
 ~~~Swift
 imageView.clearWithUIImage()
 ~~~
 
 <br/>
 
-#### CADisplayLink - setup
+>### CADisplayLink - setup
 ~~~Swift
 let imageView = GIFOImageView()
 
@@ -94,9 +94,11 @@ imageView.setupGIFImageWithDisplayLink(url: ImageURL,
 }
 ~~~
 
+- The setupGIFImageWithDisplayLink function also uses level and resize to reduce the number of frames, and additionally allows setting the number of animation loops with loopCount. Like the setupGIFImageWithUIImage function, it also automatically starts the animation upon setup.
+
 <br/>
 
-#### CADisplayLink - Animation Start / Stop
+>### CADisplayLink - Animation Start / Stop
 ~~~Swift
 imageView.stopAnimationWithDisplayLink() // start GIF Animation
 ~~~
