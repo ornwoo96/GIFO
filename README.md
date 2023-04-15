@@ -6,6 +6,7 @@ GIFO is a GIF library made with UIKit.
 <img src="https://img.shields.io/badge/Swift-5.4-orange?style=gor-the-badge&logo=Swift&logoColor=F05138"/> <img src="https://img.shields.io/badge/Platforms-iOS-blue?style=gor-the-badge&logo=&logoColor="/>
 
 <br/>
+
 ## Install
 Swift Package Manager
 
@@ -22,11 +23,15 @@ let package = Package(
 
 ## How it Works
 GIFO uses an `Animator` with CADisplayLink and a `frameFactory` to implement GIF animation. The GIF data is passed to the `frameFactory`, which creates multiple frames. The `Animator` updates the image at a set timing for each frame according to the device's environment, allowing the GIF animation to be displayed.
+
 <br/>
+
 ## Usage
+
 GIFO implements GIF animation in two ways:
 
-#### UIImage.animatedImage
+>### UIImage.animatedImage
+
 ~~~Swift
 @available(iOS 5.0, *)
 open class func animatedImage(with images: [UIImage], duration: TimeInterval) -> UIImage?
@@ -38,7 +43,8 @@ open class func animatedImage(with images: [UIImage], duration: TimeInterval) ->
 
 <br/>
 
-#### CADisplayLink
+>### CADisplayLink
+
 ~~~Swift
 @available(iOS 3.1, *)
 open class CADisplayLink : NSObject { ... }
