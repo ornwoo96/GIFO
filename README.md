@@ -19,7 +19,7 @@ let package = Package(
 ~~~
 
 ## How it Works
-GIFO uses an ~Animator Class~ with CADisplayLink and ~a frameFactory Class~ to implement GIF animation. The GIF data is passed to the frameFactory, which creates multiple frames. The Animator updates the image at a set timing for each frame according to the device's environment, allowing the GIF animation to be displayed.
+GIFO uses an `Animator` with CADisplayLink and a `frameFactory` to implement GIF animation. The GIF data is passed to the `frameFactory`, which creates multiple frames. The `Animator` updates the image at a set timing for each frame according to the device's environment, allowing the GIF animation to be displayed.
 
 ## Usage
 
