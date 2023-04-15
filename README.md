@@ -117,4 +117,4 @@ See the Full API Documentation
 ## Compatibility
 - iOS 9.0+
 - Swift 5.4
-- Xcode
+- Xcode 12.5
