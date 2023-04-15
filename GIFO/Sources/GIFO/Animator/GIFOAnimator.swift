@@ -125,7 +125,6 @@ internal class GIFOAnimator {
     /// This function creates a `CADisplayLink` object.
     private func setupDisplayLink() {
         let gifDisplay = CADisplayLink(target: self, selector: #selector(updateFrame))
-        gifDisplay.preferredFramesPerSecond = 60
         gifDisplay.isPaused = true
         gifDisplay.add(to: .main, forMode: .common)
         displayLink = gifDisplay
