@@ -15,12 +15,11 @@ extension GIFOImageView {
      image URL으로 GIF Image 생성 **Tip.많은 양의 GIF 사용 시 적합**
      
      - Parameters:
-        - url: The URL of the GIF image.
-        - cacheKey: The key to cache the image data.
-        - size: The size to resize the image.
-        - level: The level to reduce the number of frames.
-        - isResizing: A Boolean value that indicates whether to resize the image.
-        - animationOnReady: A block to be called when the animation is ready.
+        - url: The URL of the GIF image. GIF 이미지의 URL입니다.
+        - cacheKey: The key to cache the image data. 이미지 데이터를 캐시하기 위한 키입니다.
+        - resize: The size to resize the image. 이미지의 크기를 조절하기 위한 CGSize 객체입니다.
+        - level: The level to reduce the number of frames. 프레임 수를 줄이기 위한 레벨입니다.
+        - animationOnReady: A block to be called when the animation is ready. 애니메이션이 준비되었을 때 호출할 블록입니다.
     */
     public func setupGIFImageWithUIImage(url: String,
                                          cacheKey: String,
@@ -48,12 +47,11 @@ extension GIFOImageView {
      image Data로 GIF Image 생성 **Tip.많은 양의 GIF 사용 시 적합**
      
      - Parameters:
-        - imageData: The data of the GIF image.
-        - cacheKey: The key to cache the image data.
-        - size: The size to resize the image.
-        - level: The level to reduce the number of frames.
-        - isResizing: A Boolean value that indicates whether to resize the image.
-        - animationOnReady: A block to be called when the animation is ready.
+        - imageData: The data of the GIF image. GIF 이미지의 데이터입니다.
+        - cacheKey: The key to cache the image data. 이미지 데이터를 캐시하기 위한 키입니다.
+        - resize: The size to resize the image. 이미지 크기 조절을 위한 사이즈입니다.
+        - level: The level to reduce the number of frames.  프레임 수를 줄이기 위한 레벨입니다.
+        - animationOnReady: A block to be called when the animation is ready.  애니메이션이 준비되었을 때 호출할 블록입니다.
     */
     public func setupGIFImageWithUIImage(imageData: Data,
                                          cacheKey: String,
@@ -73,12 +71,11 @@ extension GIFOImageView {
      image name으로 GIF Image 생성 **Tip.많은 양의 GIF 사용 시 적합**
      
      - Parameters:
-        - imageName: The name of the GIF image.
-        - cacheKey: The key to cache the image data.
-        - size: The size to resize the image.
-        - level: The level to reduce the number of frames.
-        - isResizing: A Boolean value that indicates whether to resize the image.
-        - animationOnReady: A block to be called when the animation is ready.
+        - imageName: The name of the GIF image. GIF 이미지의 이름입니다.
+        - cacheKey: The key to cache the image data.  이미지 데이터를 캐시하기 위한 키입니다.
+        - resize: The size to resize the image. 이미지의 크기를 조정하는 데 사용됩니다.
+        - level: The level to reduce the number of frames. 프레임 수를 줄이기 위한 수준입니다.
+        - animationOnReady: A block to be called when the animation is ready. 애니메이션이 준비되었을 때 호출될 블록입니다.
     */
     public func setupGIFImageWithUIImage(imageName: String,
                                          cacheKey: String,
@@ -120,12 +117,11 @@ extension GIFOImageView {
     /// 이 함수는 FrameFactory 생성, AnimatedImage 를 UIImageView 내부의 image에 주입시키는 작업을 하는 함수입니다.
     ///
     /// - Parameters:
-    ///    - imageData: The Data of the GIF image.
-    ///    - cacheKey: The key to cache the image data.
-    ///    - size: The size to resize the image.
-    ///    - level: The level to reduce the number of frames.
-    ///    - isResizing: A Boolean value that indicates whether to resize the image.
-    ///    - animationOnReady: A block to be called when the animation is ready.
+    ///    - imageData: The Data of the GIF image. GIF 이미지의 데이터입니다.
+    ///    - cacheKey: The key to cache the image data.  이미지 데이터를 캐싱하기 위한 키입니다.
+    ///    - resize: The size to resize the image. 이미지 크기 조정입니다.
+    ///    - level: The level to reduce the number of frames. 프레임 수를 줄이는 레벨입니다.
+    ///    - animationOnReady: A block to be called when the animation is ready. 애니메이션이 준비되었을 때 호출될 블록입니다.
     private func setupForAnimationWithUIImage(imageData: Data,
                                               cacheKey: String,
                                               resize: CGSize?,
@@ -149,8 +145,8 @@ extension GIFOImageView {
     /// 이 함수는 캐시 GIF 이미지가 있는지 확인하고 캐시 GIF 이미지가 존재하면 UIImageView에 주입시키는 함수 입니다.
     ///
     /// - Parameters:
-    ///    - cacheKey: The key to cache the image data.
-    ///    - animationOnReady: A block to be called when the animation is ready.
+    ///    - cacheKey: The key to cache the image data. 이미지 데이터를 캐시하기 위한 키입니다.
+    ///    - animationOnReady: A block to be called when the animation is ready. 애니메이션이 준비되었을 때 호출할 블록입니다.
     private func checkCachedImageWithUIImage(forKey cacheKey: String,
                                              animationOnReady: (() -> Void)? = nil) {
         do {
