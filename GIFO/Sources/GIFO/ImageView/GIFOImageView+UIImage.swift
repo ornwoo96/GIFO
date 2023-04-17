@@ -24,7 +24,7 @@ extension GIFOImageView {
     public func setupGIFImageWithUIImage(url: String,
                                          cacheKey: String,
                                          resize: CGSize? = nil,
-                                         level: GIFFrameReduceLevel = .highLevel,
+                                         level: GIFOFrameReduceLevel = .highLevel,
                                          animationOnReady: (() -> Void)? = nil) {
         clearWithUIImage()
         checkCachedImageWithUIImage(forKey: cacheKey, animationOnReady: animationOnReady)
@@ -56,7 +56,7 @@ extension GIFOImageView {
     public func setupGIFImageWithUIImage(imageData: Data,
                                          cacheKey: String,
                                          resize: CGSize? = nil,
-                                         level: GIFFrameReduceLevel = .highLevel,
+                                         level: GIFOFrameReduceLevel = .highLevel,
                                          animationOnReady: (() -> Void)? = nil) {
         checkCachedImageWithUIImage(forKey: cacheKey, animationOnReady: animationOnReady)
         setupForAnimationWithUIImage(imageData: imageData,
@@ -80,7 +80,7 @@ extension GIFOImageView {
     public func setupGIFImageWithUIImage(imageName: String,
                                          cacheKey: String,
                                          resize: CGSize? = nil,
-                                         level: GIFFrameReduceLevel = .highLevel,
+                                         level: GIFOFrameReduceLevel = .highLevel,
                                          animationOnReady: (() -> Void)? = nil) {
         checkCachedImageWithUIImage(forKey: cacheKey, animationOnReady: animationOnReady)
         
@@ -125,7 +125,7 @@ extension GIFOImageView {
     private func setupForAnimationWithUIImage(imageData: Data,
                                               cacheKey: String,
                                               resize: CGSize?,
-                                              level: GIFFrameReduceLevel,
+                                              level: GIFOFrameReduceLevel,
                                               animationOnReady: (() -> Void)? = nil) {
         frameFactory = GIFOFrameFactory(data: imageData,
                                         size: resize)

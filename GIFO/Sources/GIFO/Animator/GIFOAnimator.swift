@@ -68,7 +68,7 @@ internal class GIFOAnimator {
     internal func setupForAnimation(data: Data,
                                     size: CGSize?,
                                     loopCount: Int,
-                                    level: GIFFrameReduceLevel,
+                                    level: GIFOFrameReduceLevel,
                                     cacheKey: String,
                                     isCache: Bool,
                                     animationOnReady: @escaping () -> Void) {

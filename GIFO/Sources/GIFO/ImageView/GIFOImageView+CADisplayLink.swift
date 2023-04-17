@@ -37,7 +37,7 @@ public class GIFOImageView: UIImageView {
                                              isCache: Bool = true,
                                              resize: CGSize? = nil,
                                              loopCount: Int = 0,
-                                             level: GIFFrameReduceLevel = .highLevel,
+                                             level: GIFOFrameReduceLevel = .highLevel,
                                              animationOnReady: (() -> Void)? = nil) {
         createAnimator()
 
@@ -79,7 +79,7 @@ public class GIFOImageView: UIImageView {
                                              isCache: Bool = true,
                                              resize: CGSize? = nil,
                                              loopCount: Int = 0,
-                                             level: GIFFrameReduceLevel = .highLevel,
+                                             level: GIFOFrameReduceLevel = .highLevel,
                                              animationOnReady: (() -> Void)? = nil) {
         createAnimator()
         
@@ -114,7 +114,7 @@ public class GIFOImageView: UIImageView {
                                              isCache: Bool = true,
                                              resize: CGSize? = nil,
                                              loopCount: Int = 0,
-                                             level: GIFFrameReduceLevel = .highLevel,
+                                             level: GIFOFrameReduceLevel = .highLevel,
                                              animationOnReady: (() -> Void)? = nil) {
         createAnimator()
 
@@ -190,7 +190,7 @@ public class GIFOImageView: UIImageView {
                                                   isCache: Bool,
                                                   resize: CGSize?,
                                                   loopCount: Int,
-                                                  level: GIFFrameReduceLevel,
+                                                  level: GIFOFrameReduceLevel,
                                                   animationOnReady: (() -> Void)? = nil) {
         animator?.setupForAnimation(data: imageData,
                                     size: resize,
