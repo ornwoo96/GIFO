@@ -47,10 +47,6 @@ internal class GIFOFrameFactory {
     /// GIFOFrames 형태에 배열입니다. (CADisplayLink사용시 필요)
     internal var animationGIFOFrames: [GIFOFrame] = []
     
-    /// An array of UIImage objects that hold the frames of the animation in UIImage format.
-    /// UIImage 배열들입니다. (UIImage.animatedImage를 사용시 필요)
-    internal var animationUIImageFrames: [UIImage] = []
-    
     /// The total number of frames in the animation.
     /// 프레임의 총 개수입니다.
     internal var totalFrameCount: Int?
@@ -89,7 +85,6 @@ internal class GIFOFrameFactory {
     /// Release properties related to UIImage.
     /// UIImage와 관련된 속성을 해제합니다.
     internal func clearFactoryWithUIImage(completion: @escaping ()->Void) {
-        self.animationUIImageFrames = []
         self.imageSource = nil
         self.totalFrameCount = 0
         self.animationTotalDuration = 0
