@@ -5,7 +5,7 @@
 //  Created by 김동우 on 2023/03/06.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 //! Project version number for GIFO.
 FOUNDATION_EXPORT double GIFOVersionNumber;
