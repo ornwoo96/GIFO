@@ -223,7 +223,7 @@ public class GIFOImageView: UIImageView {
     /// - Parameters:
     ///    - type: The type of the cached image. 캐시된 이미지의 유형
     ///    - key: The key to cache the image data. 이미지 데이터를 캐시하기 위한 키
-    ///    - animationOnReady: A block to be called when the animation is ready. 애니메이션이 준비되었을 때 호출할 블록
+    /// - returns: a bool value indicating whether there is a cached image or not. 캐시되어 있는 이미지가 있는 지 없는 지 알려주는 bool 값입니다.
     private func checkCachedImages(_ type: GIFOImageCacheManager.CacheType,
                                    _ key: String) -> Bool {
         if GIFOImageCacheManager.shared.checkCachedImage(type,forKey: key) {

@@ -154,12 +154,11 @@ extension GIFOImageView {
     ///
     /// - Parameters:
     ///    - cacheKey: The key to cache the image data. 이미지 데이터를 캐시하기 위한 키입니다.
-    ///    - animationOnReady: A block to be called when the animation is ready. 애니메이션이 준비되었을 때 호출할 블록입니다.
+    /// - returns: a bool value indicating whether there is a cached image or not. 캐시되어 있는 이미지가 있는 지 없는 지 알려주는 bool 값입니다.
     private func checkCachedImageWithUIImage(forKey cacheKey: String) -> Bool {
         do {
             if let image = try GIFOImageCacheManager.shared.getGIFUIImage(forKey: cacheKey) {
                 DispatchQueue.main.async { [weak self] in
-                    self?.image = nil
                     self?.image = image
                 }
                 return false
@@ -167,7 +166,6 @@ extension GIFOImageView {
                 return true
             }
         } catch {
-            print("get cached Image - failure")
             return true
         }
     }
