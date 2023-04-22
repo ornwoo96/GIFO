@@ -39,23 +39,24 @@ public class GIFOImageView: UIImageView {
                                              animationOnReady: (() -> Void)? = nil) {
         createAnimator()
 
-        checkCachedImages(.GIFFrame,
-                          cacheKey,
-                          animationOnReady: animationOnReady)
-        
-        GIFODownloader.fetchImageData(url) { result in
-            switch result {
-            case .success(let imageData):
-                self.setupForAnimationWithDisplayLink(imageData: imageData,
-                                                      cacheKey: cacheKey,
-                                                      isCache: isCache,
-                                                      resize: resize,
-                                                      loopCount: loopCount,
-                                                      level: level,
-                                                      animationOnReady: animationOnReady)
-            case .failure(let error):
-                print(error.localizedDescription)
+        if checkCachedImages(.GIFFrame,
+                             cacheKey) {
+            GIFODownloader.fetchImageData(url) { result in
+                switch result {
+                case .success(let imageData):
+                    self.setupForAnimationWithDisplayLink(imageData: imageData,
+                                                          cacheKey: cacheKey,
+                                                          isCache: isCache,
+                                                          resize: resize,
+                                                          loopCount: loopCount,
+                                                          level: level,
+                                                          animationOnReady: animationOnReady)
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
             }
+        } else {
+            animationOnReady?()
         }
     }
     
@@ -82,17 +83,18 @@ public class GIFOImageView: UIImageView {
                                              animationOnReady: (() -> Void)? = nil) {
         createAnimator()
         
-        checkCachedImages(.GIFFrame,
-                          cacheKey,
-                          animationOnReady: animationOnReady)
-        
-        setupForAnimationWithDisplayLink(imageData: imageData,
-                                         cacheKey: cacheKey,
-                                         isCache: isCache,
-                                         resize: resize,
-                                         loopCount: loopCount,
-                                         level: level,
-                                         animationOnReady: animationOnReady)
+        if checkCachedImages(.GIFFrame,
+                             cacheKey) {
+            setupForAnimationWithDisplayLink(imageData: imageData,
+                                             cacheKey: cacheKey,
+                                             isCache: isCache,
+                                             resize: resize,
+                                             loopCount: loopCount,
+                                             level: level,
+                                             animationOnReady: animationOnReady)
+        } else {
+            animationOnReady?()
+        }
     }
     
     /**
@@ -118,24 +120,26 @@ public class GIFOImageView: UIImageView {
                                              animationOnReady: (() -> Void)? = nil) {
         createAnimator()
 
-        checkCachedImages(.GIFFrame,
-                          cacheKey,
-                          animationOnReady: animationOnReady)
-        do {
-            guard let imageData = try GIFODownloader.getDataFromAsset(named: imageName) else {
+        if checkCachedImages(.GIFFrame,
+                             cacheKey) {
+            do {
+                guard let imageData = try GIFODownloader.getDataFromAsset(named: imageName) else {
+                    print(GIFOImageViewError.ImageFileNotFoundError)
+                    return
+                }
+                
+                setupForAnimationWithDisplayLink(imageData: imageData,
+                                                 cacheKey: cacheKey,
+                                                 isCache: isCache,
+                                                 resize: resize,
+                                                 loopCount: loopCount,
+                                                 level: level,
+                                                 animationOnReady: animationOnReady)
+            } catch {
                 print(GIFOImageViewError.ImageFileNotFoundError)
-                return
             }
-            
-            setupForAnimationWithDisplayLink(imageData: imageData,
-                                             cacheKey: cacheKey,
-                                             isCache: isCache,
-                                             resize: resize,
-                                             loopCount: loopCount,
-                                             level: level,
-                                             animationOnReady: animationOnReady)
-        } catch {
-            print(GIFOImageViewError.ImageFileNotFoundError)
+        } else {
+            animationOnReady?()
         }
     }
     
@@ -216,13 +220,14 @@ public class GIFOImageView: UIImageView {
     ///    - key: The key to cache the image data.
     ///    - animationOnReady: A block to be called when the animation is ready.
     private func checkCachedImages(_ type: GIFOImageCacheManager.CacheType,
-                                   _ key: String,
-                                   animationOnReady: (() -> Void)? = nil) {
+                                   _ key: String) -> Bool {
         if GIFOImageCacheManager.shared.checkCachedImage(type,forKey: key) {
             self.animator?.setupCachedImages(cacheKey: key) {
                 self.startAnimationWithDisplayLink()
-                animationOnReady?()
             }
+            return false
+        } else {
+            return true
         }
     }
 }
